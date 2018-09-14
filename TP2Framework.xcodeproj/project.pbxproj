@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030DF5F395C69FF8BAEF0548 /* Pods_TP2Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA46E7B232B8CEC998DA721C /* Pods_TP2Framework.framework */; };
+		1E57FB2D7CA4C1BE028527E7 /* Pods_TP2FrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775B81C576DA14AB9C426972 /* Pods_TP2FrameworkTests.framework */; };
 		40AEB8F62142D70B0042DD3F /* TP2Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AEB8EC2142D70B0042DD3F /* TP2Framework.framework */; };
 		40AEB8FB2142D70B0042DD3F /* TP2FrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB8FA2142D70B0042DD3F /* TP2FrameworkTests.swift */; };
 		40AEB8FD2142D70B0042DD3F /* TP2Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 40AEB8EF2142D70B0042DD3F /* TP2Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,7 +27,6 @@
 		40AEB92221430B470042DD3F /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB92121430B470042DD3F /* Beacon.swift */; };
 		40AEB92421430FA90042DD3F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB92321430FA90042DD3F /* Product.swift */; };
 		40AEB926214310C20042DD3F /* PromomtionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB925214310C20042DD3F /* PromomtionDetail.swift */; };
-		40AEB929214AD3FD0042DD3F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AEB928214AD3FC0042DD3F /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +61,12 @@
 		40AEB92121430B470042DD3F /* Beacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
 		40AEB92321430FA90042DD3F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		40AEB925214310C20042DD3F /* PromomtionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromomtionDetail.swift; sourceTree = "<group>"; };
-		40AEB928214AD3FC0042DD3F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = frameworks/SwiftyJSON.framework; sourceTree = "<group>"; };
+		4F84AE169C8CBC3EB0B4B848 /* Pods-TP2FrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TP2FrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TP2FrameworkTests/Pods-TP2FrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		73905909E7BC81609C8737B4 /* Pods-TP2FrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TP2FrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TP2FrameworkTests/Pods-TP2FrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		775B81C576DA14AB9C426972 /* Pods_TP2FrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TP2FrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA46E7B232B8CEC998DA721C /* Pods_TP2Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TP2Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51A471B87040CC585C4A425 /* Pods-TP2Framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TP2Framework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TP2Framework/Pods-TP2Framework.debug.xcconfig"; sourceTree = "<group>"; };
+		BF62282DCB61FF65B28F2A56 /* Pods-TP2Framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TP2Framework.release.xcconfig"; path = "Pods/Target Support Files/Pods-TP2Framework/Pods-TP2Framework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40AEB929214AD3FD0042DD3F /* SwiftyJSON.framework in Frameworks */,
+				030DF5F395C69FF8BAEF0548 /* Pods_TP2Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,19 +83,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				40AEB8F62142D70B0042DD3F /* TP2Framework.framework in Frameworks */,
+				1E57FB2D7CA4C1BE028527E7 /* Pods_TP2FrameworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1961320F5BFB10E708ED1216 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA46E7B232B8CEC998DA721C /* Pods_TP2Framework.framework */,
+				775B81C576DA14AB9C426972 /* Pods_TP2FrameworkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		40AEB8E22142D70B0042DD3F = {
 			isa = PBXGroup;
 			children = (
 				40AEB8EE2142D70B0042DD3F /* TP2Framework */,
 				40AEB8F92142D70B0042DD3F /* TP2FrameworkTests */,
 				40AEB8ED2142D70B0042DD3F /* Products */,
-				40AEB927214AD3FC0042DD3F /* Frameworks */,
+				EDCB2F4972597C3244E68A28 /* Pods */,
+				1961320F5BFB10E708ED1216 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,12 +176,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		40AEB927214AD3FC0042DD3F /* Frameworks */ = {
+		EDCB2F4972597C3244E68A28 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				40AEB928214AD3FC0042DD3F /* SwiftyJSON.framework */,
+				B51A471B87040CC585C4A425 /* Pods-TP2Framework.debug.xcconfig */,
+				BF62282DCB61FF65B28F2A56 /* Pods-TP2Framework.release.xcconfig */,
+				73905909E7BC81609C8737B4 /* Pods-TP2FrameworkTests.debug.xcconfig */,
+				4F84AE169C8CBC3EB0B4B848 /* Pods-TP2FrameworkTests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40AEB9002142D70B0042DD3F /* Build configuration list for PBXNativeTarget "TP2Framework" */;
 			buildPhases = (
+				8942D25319894A63923C0669 /* [CP] Check Pods Manifest.lock */,
 				40AEB8E72142D70B0042DD3F /* Sources */,
 				40AEB8E82142D70B0042DD3F /* Frameworks */,
 				40AEB8E92142D70B0042DD3F /* Headers */,
@@ -203,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40AEB9032142D70B0042DD3F /* Build configuration list for PBXNativeTarget "TP2FrameworkTests" */;
 			buildPhases = (
+				3AA6ED7365E7A46B91C0FA41 /* [CP] Check Pods Manifest.lock */,
 				40AEB8F12142D70B0042DD3F /* Sources */,
 				40AEB8F22142D70B0042DD3F /* Frameworks */,
 				40AEB8F32142D70B0042DD3F /* Resources */,
+				2B06BF3285643F01CE3152BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +293,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B06BF3285643F01CE3152BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TP2FrameworkTests/Pods-TP2FrameworkTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TP2FrameworkTests/Pods-TP2FrameworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AA6ED7365E7A46B91C0FA41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TP2FrameworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8942D25319894A63923C0669 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TP2Framework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40AEB8E72142D70B0042DD3F /* Sources */ = {
@@ -435,6 +515,7 @@
 		};
 		40AEB9012142D70B0042DD3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B51A471B87040CC585C4A425 /* Pods-TP2Framework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -455,6 +536,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.TP2Framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -466,6 +548,7 @@
 		};
 		40AEB9022142D70B0042DD3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF62282DCB61FF65B28F2A56 /* Pods-TP2Framework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -486,6 +569,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.TP2Framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -496,6 +580,7 @@
 		};
 		40AEB9042142D70B0042DD3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73905909E7BC81609C8737B4 /* Pods-TP2FrameworkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -515,6 +600,7 @@
 		};
 		40AEB9052142D70B0042DD3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F84AE169C8CBC3EB0B4B848 /* Pods-TP2FrameworkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -21,14 +21,14 @@ public class Preferences {
         }
     }
     
-    public static func retreiveData(key: String) -> String {
+    public static func retreiveDataAsString(key: String) -> String {
         guard let value: String = preferences.string(forKey: key) else {
             return ""
         }
         return value
     }
     
-    public static func retreiveData(key: String) -> Int {
+    public static func retreiveDataAsInt(key: String) -> Int {
         var value: Int = 0
         
         value = preferences.integer(forKey: key)
