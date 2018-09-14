@@ -10,9 +10,9 @@ import Foundation
 import SwiftyJSON
 
 public class CompanyType {
-    var id: Int
-    var name: String
-    var status: String
+    public var id: Int
+    public var name: String
+    public var status: String
     
     public init() {
         self.id = 0

@@ -10,20 +10,20 @@ import Foundation
 import SwiftyJSON
 
 public class Beacon {
-    var id: Int
-    var uuid: String
-    var major: Int
-    var minor: Int
-    var privateId: String
-    var batteryLife: String
-    var color: String
-    var name: String
-    var transmitPower: String
-    var owner: String
-    var latitude: Float
-    var longitude: Float
-    var altitude: Float
-    var status: String
+    public var id: Int
+    public var uuid: String
+    public var major: Int
+    public var minor: Int
+    public var privateId: String
+    public var batteryLife: String
+    public var color: String
+    public var name: String
+    public var transmitPower: String
+    public var owner: String
+    public var latitude: Float
+    public var longitude: Float
+    public var altitude: Float
+    public var status: String
     
     public init() {
         self.id = 0

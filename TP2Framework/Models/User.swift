@@ -10,16 +10,16 @@ import Foundation
 import SwiftyJSON
 
 public class User {
-    var id: Int
-    var email: String
-    var password: String
-    var fullName: String
-    var lastName: String
-    var age: Int
-    var dni: String
-    var phoneNumber: String
-    var profilePicture: String
-    var status: String
+    public var id: Int
+    public var email: String
+    public var password: String
+    public var fullName: String
+    public var lastName: String
+    public var age: Int
+    public var dni: String
+    public var phoneNumber: String
+    public var profilePicture: String
+    public var status: String
     
     public init() {
         self.id = 0

@@ -10,11 +10,11 @@ import Foundation
 import SwiftyJSON
 
 public class PromotionDetail {
-    var id: Int
-    var promotion: Promotion
-    var product: Product
-    var quantity: Int
-    var status: String
+    public var id: Int
+    public var promotion: Promotion
+    public var product: Product
+    public var quantity: Int
+    public var status: String
     
     public init() {
         self.id = 0

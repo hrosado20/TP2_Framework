@@ -10,12 +10,12 @@ import Foundation
 import SwiftyJSON
 
 public class Company {
-    var id: Int
-    var companyType: CompanyType
-    var name: String
-    var ruc: String
-    var address: String
-    var status: String
+    public var id: Int
+    public var companyType: CompanyType
+    public var name: String
+    public var ruc: String
+    public var address: String
+    public var status: String
     
     public init() {
         self.id = 0

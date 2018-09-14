@@ -10,17 +10,17 @@ import Foundation
 import SwiftyJSON
 
 public class Place {
-    var id: Int
-    var placeType: PlaceType
-    var company: Company
-    var beacon: Beacon
-    var name: String
-    var description: String
-    var priority: Int
-    var latitude: Float
-    var longitude: Float
-    var altitude: Float
-    var status: String
+    public var id: Int
+    public var placeType: PlaceType
+    public var company: Company
+    public var beacon: Beacon
+    public var name: String
+    public var description: String
+    public var priority: Int
+    public var latitude: Float
+    public var longitude: Float
+    public var altitude: Float
+    public var status: String
     
     public init() {
         self.id = 0

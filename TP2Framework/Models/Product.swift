@@ -10,12 +10,12 @@ import Foundation
 import SwiftyJSON
 
 public class Product {
-    var id: Int
-    var name: String
-    var description: String
-    var price: Float
-    var image: String
-    var status: String
+    public var id: Int
+    public var name: String
+    public var description: String
+    public var price: Float
+    public var image: String
+    public var status: String
     
     public init() {
         self.id = 0

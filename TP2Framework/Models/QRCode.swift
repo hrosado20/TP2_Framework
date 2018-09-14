@@ -10,14 +10,14 @@ import Foundation
 import SwiftyJSON
 
 public class QRCode {
-    var id: Int
-    var user: User
-    var promotion: Promotion
-    var inputMessage: String
-    var inputCorrectionlevel: String
-    var url: String
-    var ip: String
-    var status: String
+    public var id: Int
+    public var user: User
+    public var promotion: Promotion
+    public var inputMessage: String
+    public var inputCorrectionlevel: String
+    public var url: String
+    public var ip: String
+    public var status: String
     
     public init() {
         self.id = 0
