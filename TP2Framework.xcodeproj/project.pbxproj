@@ -10,6 +10,22 @@
 		40AEB8F62142D70B0042DD3F /* TP2Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AEB8EC2142D70B0042DD3F /* TP2Framework.framework */; };
 		40AEB8FB2142D70B0042DD3F /* TP2FrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB8FA2142D70B0042DD3F /* TP2FrameworkTests.swift */; };
 		40AEB8FD2142D70B0042DD3F /* TP2Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 40AEB8EF2142D70B0042DD3F /* TP2Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40AEB90A2142D7EF0042DD3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB9092142D7EF0042DD3F /* Constants.swift */; };
+		40AEB90C2142DA4D0042DD3F /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB90B2142DA4D0042DD3F /* Api.swift */; };
+		40AEB90E2142DB0F0042DD3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB90D2142DB0F0042DD3F /* User.swift */; };
+		40AEB9102142E09C0042DD3F /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB90F2142E09C0042DD3F /* QRCode.swift */; };
+		40AEB9122142E0F60042DD3F /* PromotionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB9112142E0F60042DD3F /* PromotionType.swift */; };
+		40AEB9142142E16A0042DD3F /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB9132142E16A0042DD3F /* Promotion.swift */; };
+		40AEB9162142E25A0042DD3F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB9152142E25A0042DD3F /* Utils.swift */; };
+		40AEB9182142FCB30042DD3F /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB9172142FCB30042DD3F /* Preference.swift */; };
+		40AEB91A214305D40042DD3F /* CompanyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB919214305D40042DD3F /* CompanyType.swift */; };
+		40AEB91C214309630042DD3F /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB91B214309630042DD3F /* Company.swift */; };
+		40AEB91E21430AC00042DD3F /* PlaceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB91D21430AC00042DD3F /* PlaceType.swift */; };
+		40AEB92021430AFC0042DD3F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB91F21430AFC0042DD3F /* Place.swift */; };
+		40AEB92221430B470042DD3F /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB92121430B470042DD3F /* Beacon.swift */; };
+		40AEB92421430FA90042DD3F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB92321430FA90042DD3F /* Product.swift */; };
+		40AEB926214310C20042DD3F /* PromomtionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB925214310C20042DD3F /* PromomtionDetail.swift */; };
+		40AEB929214AD3FD0042DD3F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AEB928214AD3FC0042DD3F /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +45,22 @@
 		40AEB8F52142D70B0042DD3F /* TP2FrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TP2FrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AEB8FA2142D70B0042DD3F /* TP2FrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TP2FrameworkTests.swift; sourceTree = "<group>"; };
 		40AEB8FC2142D70B0042DD3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40AEB9092142D7EF0042DD3F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		40AEB90B2142DA4D0042DD3F /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		40AEB90D2142DB0F0042DD3F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		40AEB90F2142E09C0042DD3F /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
+		40AEB9112142E0F60042DD3F /* PromotionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionType.swift; sourceTree = "<group>"; };
+		40AEB9132142E16A0042DD3F /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
+		40AEB9152142E25A0042DD3F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		40AEB9172142FCB30042DD3F /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		40AEB919214305D40042DD3F /* CompanyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyType.swift; sourceTree = "<group>"; };
+		40AEB91B214309630042DD3F /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		40AEB91D21430AC00042DD3F /* PlaceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceType.swift; sourceTree = "<group>"; };
+		40AEB91F21430AFC0042DD3F /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		40AEB92121430B470042DD3F /* Beacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
+		40AEB92321430FA90042DD3F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		40AEB925214310C20042DD3F /* PromomtionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromomtionDetail.swift; sourceTree = "<group>"; };
+		40AEB928214AD3FC0042DD3F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = frameworks/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40AEB929214AD3FD0042DD3F /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +89,7 @@
 				40AEB8EE2142D70B0042DD3F /* TP2Framework */,
 				40AEB8F92142D70B0042DD3F /* TP2FrameworkTests */,
 				40AEB8ED2142D70B0042DD3F /* Products */,
+				40AEB927214AD3FC0042DD3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +105,9 @@
 		40AEB8EE2142D70B0042DD3F /* TP2Framework */ = {
 			isa = PBXGroup;
 			children = (
+				40AEB9062142D7B10042DD3F /* Models */,
+				40AEB9072142D7C20042DD3F /* Network */,
+				40AEB9082142D7CF0042DD3F /* Utils */,
 				40AEB8EF2142D70B0042DD3F /* TP2Framework.h */,
 				40AEB8F02142D70B0042DD3F /* Info.plist */,
 			);
@@ -84,6 +121,50 @@
 				40AEB8FC2142D70B0042DD3F /* Info.plist */,
 			);
 			path = TP2FrameworkTests;
+			sourceTree = "<group>";
+		};
+		40AEB9062142D7B10042DD3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				40AEB92121430B470042DD3F /* Beacon.swift */,
+				40AEB91B214309630042DD3F /* Company.swift */,
+				40AEB919214305D40042DD3F /* CompanyType.swift */,
+				40AEB91F21430AFC0042DD3F /* Place.swift */,
+				40AEB91D21430AC00042DD3F /* PlaceType.swift */,
+				40AEB92321430FA90042DD3F /* Product.swift */,
+				40AEB9132142E16A0042DD3F /* Promotion.swift */,
+				40AEB925214310C20042DD3F /* PromomtionDetail.swift */,
+				40AEB9112142E0F60042DD3F /* PromotionType.swift */,
+				40AEB90F2142E09C0042DD3F /* QRCode.swift */,
+				40AEB90D2142DB0F0042DD3F /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		40AEB9072142D7C20042DD3F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				40AEB90B2142DA4D0042DD3F /* Api.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		40AEB9082142D7CF0042DD3F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				40AEB9092142D7EF0042DD3F /* Constants.swift */,
+				40AEB9172142FCB30042DD3F /* Preference.swift */,
+				40AEB9152142E25A0042DD3F /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		40AEB927214AD3FC0042DD3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40AEB928214AD3FC0042DD3F /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +229,7 @@
 				TargetAttributes = {
 					40AEB8EB2142D70B0042DD3F = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 					40AEB8F42142D70B0042DD3F = {
 						CreatedOnToolsVersion = 9.4;
@@ -194,6 +276,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40AEB91A214305D40042DD3F /* CompanyType.swift in Sources */,
+				40AEB90C2142DA4D0042DD3F /* Api.swift in Sources */,
+				40AEB9102142E09C0042DD3F /* QRCode.swift in Sources */,
+				40AEB92021430AFC0042DD3F /* Place.swift in Sources */,
+				40AEB91C214309630042DD3F /* Company.swift in Sources */,
+				40AEB9182142FCB30042DD3F /* Preference.swift in Sources */,
+				40AEB92221430B470042DD3F /* Beacon.swift in Sources */,
+				40AEB9122142E0F60042DD3F /* PromotionType.swift in Sources */,
+				40AEB9162142E25A0042DD3F /* Utils.swift in Sources */,
+				40AEB90A2142D7EF0042DD3F /* Constants.swift in Sources */,
+				40AEB926214310C20042DD3F /* PromomtionDetail.swift in Sources */,
+				40AEB90E2142DB0F0042DD3F /* User.swift in Sources */,
+				40AEB91E21430AC00042DD3F /* PlaceType.swift in Sources */,
+				40AEB9142142E16A0042DD3F /* Promotion.swift in Sources */,
+				40AEB92421430FA90042DD3F /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +436,7 @@
 		40AEB9012142D70B0042DD3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +444,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks",
+				);
 				INFOPLIST_FILE = TP2Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pe.edu.upc.TP2Framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +467,7 @@
 		40AEB9022142D70B0042DD3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -371,6 +475,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks",
+				);
 				INFOPLIST_FILE = TP2Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,6 +497,7 @@
 		40AEB9042142D70B0042DD3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TQ4Y5Q73BC;
 				INFOPLIST_FILE = TP2FrameworkTests/Info.plist;
@@ -407,6 +516,7 @@
 		40AEB9052142D70B0042DD3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TQ4Y5Q73BC;
 				INFOPLIST_FILE = TP2FrameworkTests/Info.plist;
