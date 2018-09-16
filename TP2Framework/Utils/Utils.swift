@@ -13,25 +13,19 @@ public class Utils {
     private static var dateFormatter: DateFormatter = DateFormatter()
     
     public static func convertDate(from now: Date?) -> String {
-        self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
-        self.dateFormatter.timeStyle = .medium
-        self.dateFormatter.dateStyle = .long
+        self.dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
         return (now == nil) ? dateFormatter.string(for: Date())! : dateFormatter.string(for: now)!
     }
     
     public static func convertDate(from now: String?) -> Date {
-        self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
-        self.dateFormatter.timeStyle = .medium
-        self.dateFormatter.dateStyle = .long
+        self.dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
         return (now == nil) ? Date() : dateFormatter.date(from: now!)!
     }
     
     public static func getTimeNow() -> String {
-        self.dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
-        self.dateFormatter.timeStyle = .medium
-        self.dateFormatter.dateStyle = .long
+        self.dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
         return dateFormatter.string(from: Date())
     }

@@ -17,6 +17,7 @@ public class QRCode {
     public var inputCorrectionlevel: String
     public var url: String
     public var ip: String
+    public var createdAt: Date
     public var status: String
     
     public init() {
@@ -27,10 +28,11 @@ public class QRCode {
         self.inputCorrectionlevel = ""
         self.url = ""
         self.ip = ""
+        self.createdAt = Utils.getTimeNow()
         self.status = ""
     }
     
-    public init(id: Int, user: User, promotion: Promotion, inputMessage: String, inputCorrectionlevel: String, url: String, ip: String, status: String) {
+    public init(id: Int, user: User, promotion: Promotion, inputMessage: String, inputCorrectionlevel: String, url: String, ip: String, createdAt: Date, status: String) {
         self.id = id
         self.user = user
         self.promotion = promotion
@@ -38,6 +40,19 @@ public class QRCode {
         self.inputCorrectionlevel = inputCorrectionlevel
         self.url = url
         self.ip = ip
+        self.createdAt = createdAt
+        self.status = status
+    }
+    
+    public init(id: Int, user: User, promotion: Promotion, inputMessage: String, inputCorrectionlevel: String, url: String, ip: String, createdAt: String, status: String) {
+        self.id = id
+        self.user = user
+        self.promotion = promotion
+        self.inputMessage = inputMessage
+        self.inputCorrectionlevel = inputCorrectionlevel
+        self.url = url
+        self.ip = ip
+        self.createdAt = Utils.convertDate(from: createdAt)
         self.status = status
     }
     
@@ -49,7 +64,8 @@ public class QRCode {
                   inputCorrectionlevel: jsonObject["inputCorrectionLevel"].stringValue,
                   url: jsonObject["url"].stringValue,
                   ip: jsonObject["ip"].stringValue,
-                  status: jsonObject[""].stringValue)
+                  createdAt: jsonObject["createdAt"].stringValue,
+                  status: jsonObject["status"].stringValue)
     }
     
     public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [QRCode] {
