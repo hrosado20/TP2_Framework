@@ -20,7 +20,7 @@ public class CloudinaryHelper {
 //    print("error: \(error?.description)")
 //    }
     
-    public static func uploadUserImage(fromImage image: UIImage, progress: @escaping (Progress?) -> Void, success: @escaping (String?) -> Void) -> Void {
+    public static func uploadUserImage(fromImage image: UIImage, progress: ((Progress?) -> Void)?, success: @escaping (String?) -> Void) -> Void {
         let config: CLDConfiguration = CLDConfiguration(cloudinaryUrl: cloudinaryUrl)!
         let cloudinary:CLDCloudinary = CLDCloudinary(configuration: config)
         
@@ -32,7 +32,7 @@ public class CloudinaryHelper {
         }
     }
     
-    public static func uploadPromotionImage(fromImage image: UIImage, progress: @escaping (Progress?) -> Void, success: @escaping (String?) -> Void) -> Void {
+    public static func uploadPromotionImage(fromImage image: UIImage, progress: ((Progress?) -> Void)?, success: @escaping (String?) -> Void) -> Void {
         let config: CLDConfiguration = CLDConfiguration(cloudinaryUrl: cloudinaryUrl)!
         let cloudinary:CLDCloudinary = CLDCloudinary(configuration: config)
         
@@ -44,7 +44,7 @@ public class CloudinaryHelper {
         }
     }
     
-    public static func uploadProductImage(fromImage image: UIImage, progress: @escaping (Progress?) -> Void, success: @escaping (String?) -> Void) -> Void {
+    public static func uploadProductImage(fromImage image: UIImage, progress: ((Progress?) -> Void)?, success: @escaping (String?) -> Void) -> Void {
         let config: CLDConfiguration = CLDConfiguration(cloudinaryUrl: cloudinaryUrl)!
         let cloudinary:CLDCloudinary = CLDCloudinary(configuration: config)
         
