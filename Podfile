@@ -6,6 +6,7 @@ target 'TP2Framework' do
   use_frameworks!
 
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'Cloudinary', '~> 2.0'
 
   # Pods for TP2Framework
 

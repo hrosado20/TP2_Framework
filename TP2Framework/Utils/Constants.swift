@@ -9,6 +9,11 @@
 import Foundation
 
 public class Constants {
+    public struct cloudinary {
+        public static var userPreset = "user_preset"
+        public static var promotionPreset = "promotion_preset"
+        public static var productPreset = "product_preset"
+    }
     public struct keys {
         public static var token: String = "token"
         public static var refreshToken: String = "refreshToken"
