@@ -53,6 +53,8 @@ public class CloudinaryHelper {
             if error == nil {
                 success(response!.url)
             }
+            
+            success(error?.description)
         }
     }
     
