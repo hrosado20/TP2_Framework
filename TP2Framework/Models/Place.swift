@@ -36,18 +36,18 @@ public class Place {
         self.status = ""
     }
     
-    public init(id: Int, placeType: PlaceType, company: Company, beacon: Beacon, name: String, description: String, priority: Int, latitude: Float, longitude: Float, altitude: Float, status: String) {
+    public init(id: Int, placeType: PlaceType, company: Company, beacon: Beacon, name: String, description: String?, priority: Int, latitude: Float, longitude: Float, altitude: Float, status: String?) {
         self.id = id
         self.placeType = placeType
         self.company = company
         self.beacon = beacon
         self.name = name
-        self.description = description
+        self.description = (description == nil) ? "" : description!
         self.priority = priority
         self.latitude = latitude
         self.longitude = longitude
         self.altitude = altitude
-        self.status = status
+        self.status = (status == nil) ? "" : status!
     }
     
     public convenience init(fromJSONObject jsonObject: JSON) {

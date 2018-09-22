@@ -42,7 +42,7 @@ public class Beacon {
         self.status = ""
     }
     
-    public init(id: Int, uuid: String, major: Int, minor: Int, privateId: String, batteryLife: String, color: String, name: String, transmitPower: String, owner: String, latitude: Float, longitude: Float, altitude: Float, status: String) {
+    public init(id: Int, uuid: String, major: Int, minor: Int, privateId: String, batteryLife: String, color: String, name: String, transmitPower: String, owner: String, latitude: Float, longitude: Float, altitude: Float, status: String?) {
         self.id = id
         self.uuid = uuid
         self.major = major
@@ -56,7 +56,7 @@ public class Beacon {
         self.latitude = latitude
         self.longitude = longitude
         self.altitude = altitude
-        self.status = status
+        self.status = (status == nil) ? "" : status!
     }
     
     public convenience init(fromJSONObject jsonObject: JSON) {

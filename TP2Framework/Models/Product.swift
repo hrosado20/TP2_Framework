@@ -26,13 +26,13 @@ public class Product {
         self.status = ""
     }
     
-    public init(id: Int, name: String, description: String, price: Float, image: String, status: String) {
+    public init(id: Int, name: String, description: String, price: Float, image: String?, status: String?) {
         self.id = id
         self.name = name
         self.description = description
         self.price = price
-        self.image = image
-        self.status = status
+        self.image = (image == nil) ? "" : image!
+        self.status = (status == nil) ? "" : status!
     }
     
     public convenience init(fromJSONObject jsonObject: JSON) {

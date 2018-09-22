@@ -32,28 +32,28 @@ public class QRCode {
         self.status = ""
     }
     
-    public init(id: Int, user: User, promotion: Promotion, inputMessage: String, inputCorrectionlevel: String, url: String, ip: String, createdAt: Date, status: String) {
+    public init(id: Int, user: User, promotion: Promotion, inputMessage: String?, inputCorrectionlevel: String?, url: String?, ip: String?, createdAt: Date, status: String?) {
         self.id = id
         self.user = user
         self.promotion = promotion
-        self.inputMessage = inputMessage
-        self.inputCorrectionlevel = inputCorrectionlevel
-        self.url = url
-        self.ip = ip
+        self.inputMessage = (inputMessage == nil) ? "" : inputMessage!
+        self.inputCorrectionlevel = (inputCorrectionlevel == nil) ? "" : inputCorrectionlevel!
+        self.url = (url == nil) ? "" : url!
+        self.ip = (ip == nil) ? "" : ip!
         self.createdAt = createdAt
-        self.status = status
+        self.status = (status == nil) ? "" : status!
     }
     
-    public init(id: Int, user: User, promotion: Promotion, inputMessage: String, inputCorrectionlevel: String, url: String, ip: String, createdAt: String, status: String) {
+    public init(id: Int, user: User, promotion: Promotion, inputMessage: String?, inputCorrectionlevel: String?, url: String?, ip: String?, createdAt: String, status: String?) {
         self.id = id
         self.user = user
         self.promotion = promotion
-        self.inputMessage = inputMessage
-        self.inputCorrectionlevel = inputCorrectionlevel
-        self.url = url
-        self.ip = ip
+        self.inputMessage = (inputMessage == nil) ? "" : inputMessage!
+        self.inputCorrectionlevel = (inputCorrectionlevel == nil) ? "" : inputCorrectionlevel!
+        self.url = (url == nil) ? "" : url!
+        self.ip = (ip == nil) ? "" : ip!
         self.createdAt = Utils.convertDate(from: createdAt)
-        self.status = status
+        self.status = (status == nil) ? "" : status!
     }
     
     public convenience init(fromJSONObject jsonObject: JSON) {

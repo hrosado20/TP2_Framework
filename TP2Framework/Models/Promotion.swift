@@ -16,6 +16,7 @@ public class Promotion {
     public var description: String
     public var initialDate: Date
     public var duration: Int
+    public var image: String
     public var totalPrice: Float
     public var status: String
     
@@ -26,28 +27,31 @@ public class Promotion {
         self.description = ""
         self.initialDate = Utils.getTimeNow()
         self.duration = 0
+        self.image = ""
         self.totalPrice = 0.0000
         self.status = ""
     }
     
-    public init(id: Int, promotionType: PromotionType, name: String, description: String, initialDate: Date, duration: Int, totalPrice: Float?, status: String?) {
+    public init(id: Int, promotionType: PromotionType, name: String, description: String, initialDate: Date, duration: Int, image: String?, totalPrice: Float?, status: String?) {
         self.id = id
         self.promotionType = promotionType
         self.name = name
         self.description = description
         self.initialDate = initialDate
         self.duration = duration
+        self.image = (image == nil) ? "" : image!
         self.totalPrice = (totalPrice == nil) ? 0.0000 : totalPrice!
         self.status = (status == nil) ? "" : status!
     }
     
-    public init(id: Int, promotionType: PromotionType, name: String, description: String, initialDate: String, duration: Int, totalPrice: Float?, status: String?) {
+    public init(id: Int, promotionType: PromotionType, name: String, description: String, initialDate: String, duration: Int, image: String?, totalPrice: Float?, status: String?) {
         self.id = id
         self.promotionType = promotionType
         self.name = name
         self.description = description
         self.initialDate = Utils.convertDate(from: initialDate)
         self.duration = duration
+        self.image = (image == nil) ? "" : image!
         self.totalPrice = (totalPrice == nil) ? 0.0000 : totalPrice!
         self.status = (status == nil) ? "" : status!
     }
@@ -59,6 +63,7 @@ public class Promotion {
                   description: jsonObject["description"].stringValue,
                   initialDate: jsonObject["initialDate"].stringValue,
                   duration: jsonObject["duration"].intValue,
+                  image: jsonObject["image"].stringValue,
                   totalPrice: jsonObject["totalPrice"].floatValue,
                   status: jsonObject["status"].stringValue)
     }

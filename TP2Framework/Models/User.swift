@@ -19,6 +19,7 @@ public class User {
     public var dni: String
     public var phoneNumber: String
     public var profilePicture: String
+    public var backgroundPicture: String
     public var status: String
     
     public init() {
@@ -31,10 +32,11 @@ public class User {
         self.dni = ""
         self.phoneNumber = ""
         self.profilePicture = ""
+        self.backgroundPicture = ""
         self.status = ""
     }
     
-    public init(id: Int, email: String, password: String, fullName: String, lastName: String, age: Int, dni: String, phoneNumber: String?, profilePicture: String?, status: String?) {
+    public init(id: Int, email: String, password: String, fullName: String, lastName: String, age: Int, dni: String, phoneNumber: String?, profilePicture: String?, backgroundPicture: String?, status: String?) {
         self.id = id
         self.email = email
         self.password = password
@@ -44,6 +46,7 @@ public class User {
         self.dni = dni
         self.phoneNumber = (phoneNumber == nil) ? "" : phoneNumber!
         self.profilePicture = (profilePicture == nil) ? "" : profilePicture!
+        self.backgroundPicture = (backgroundPicture == nil) ? "" : backgroundPicture!
         self.status = (status == nil) ? "" : status!
     }
     
@@ -57,6 +60,7 @@ public class User {
                   dni: jsonObject["dni"].stringValue,
                   phoneNumber: jsonObject["phoneNumber"].stringValue,
                   profilePicture: jsonObject["profilePicture"].stringValue,
+                  backgroundPicture: jsonObject["backgroundPicture"].stringValue,
                   status: jsonObject["status"].stringValue)
     }
     

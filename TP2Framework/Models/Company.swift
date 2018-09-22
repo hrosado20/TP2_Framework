@@ -26,13 +26,13 @@ public class Company {
         self.status = ""
     }
     
-    public init(id: Int, companyType: CompanyType, name: String, ruc: String, address: String, status: String) {
+    public init(id: Int, companyType: CompanyType, name: String, ruc: String, address: String?, status: String?) {
         self.id = id
         self.companyType = companyType
         self.name = name
         self.ruc = ruc
-        self.address = address
-        self.status = status
+        self.address = (address == nil) ? "" : address!
+        self.status = (status == nil) ? "" : status!
     }
     
     public convenience init(fromJSONObject jsonObject: JSON) {
