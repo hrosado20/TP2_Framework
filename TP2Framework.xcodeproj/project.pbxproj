@@ -171,10 +171,10 @@
 		40AEB9082142D7CF0042DD3F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				409B44BF2156ADE400CDF9B0 /* CloudinaryHelper.swift */,
 				40AEB9092142D7EF0042DD3F /* Constants.swift */,
 				40AEB9172142FCB30042DD3F /* Preference.swift */,
 				40AEB9152142E25A0042DD3F /* Utils.swift */,
-				409B44BF2156ADE400CDF9B0 /* CloudinaryHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
