@@ -5,6 +5,7 @@ target 'TP2Framework' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
+  pod 'TP2Framework', :path => '../'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Cloudinary', '~> 2.0'
 
