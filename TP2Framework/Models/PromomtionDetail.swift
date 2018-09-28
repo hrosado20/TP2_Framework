@@ -14,6 +14,7 @@ public class PromotionDetail {
     public var promotion: Promotion
     public var product: Product
     public var quantity: Int
+    public var createdAt: Date
     public var status: String
     
     public init() {
@@ -21,14 +22,25 @@ public class PromotionDetail {
         self.promotion = Promotion.init()
         self.product = Product.init()
         self.quantity = 0
+        self.createdAt = Utils.getTimeNow()
         self.status = ""
     }
     
-    public init(id: Int, promotion: Promotion, product: Product, quantity: Int, status: String) {
+    public init(id: Int, promotion: Promotion, product: Product, quantity: Int, createdAt: Date, status: String) {
         self.id = id
         self.promotion = promotion
         self.product = product
         self.quantity = quantity
+        self.createdAt = createdAt
+        self.status = status
+    }
+    
+    public init(id: Int, promotion: Promotion, product: Product, quantity: Int, createdAt: String, status: String) {
+        self.id = id
+        self.promotion = promotion
+        self.product = product
+        self.quantity = quantity
+        self.createdAt = Utils.convertDate(from: createdAt)
         self.status = status
     }
     
@@ -37,6 +49,7 @@ public class PromotionDetail {
                   promotion: Promotion.init(fromJSONObject: jsonObject["promotion"]),
                   product: Product.init(fromJSONObject: jsonObject["product"]),
                   quantity: jsonObject["quantity"].intValue,
+                  createdAt: jsonObject["createdAt"].stringValue,
                   status: jsonObject["status"].stringValue)
     }
     

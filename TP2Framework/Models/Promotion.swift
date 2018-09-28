@@ -18,6 +18,7 @@ public class Promotion {
     public var duration: Int
     public var image: String
     public var totalPrice: Float
+    public var createdAt: Date
     public var status: String
     
     public init() {
@@ -29,10 +30,11 @@ public class Promotion {
         self.duration = 0
         self.image = ""
         self.totalPrice = 0.0000
+        self.createdAt = Utils.getTimeNow()
         self.status = ""
     }
     
-    public init(id: Int, promotionType: PromotionType, name: String, description: String, initialDate: Date, duration: Int, image: String?, totalPrice: Float?, status: String?) {
+    public init(id: Int, promotionType: PromotionType, name: String, description: String, initialDate: Date, duration: Int, image: String?, totalPrice: Float?, createdAt: Date, status: String?) {
         self.id = id
         self.promotionType = promotionType
         self.name = name
@@ -41,10 +43,11 @@ public class Promotion {
         self.duration = duration
         self.image = (image == nil) ? "" : image!
         self.totalPrice = (totalPrice == nil) ? 0.0000 : totalPrice!
+        self.createdAt = createdAt
         self.status = (status == nil) ? "" : status!
     }
     
-    public init(id: Int, promotionType: PromotionType, name: String, description: String, initialDate: String, duration: Int, image: String?, totalPrice: Float?, status: String?) {
+    public init(id: Int, promotionType: PromotionType, name: String, description: String, initialDate: String, duration: Int, image: String?, totalPrice: Float?, createdAt: String, status: String?) {
         self.id = id
         self.promotionType = promotionType
         self.name = name
@@ -53,6 +56,7 @@ public class Promotion {
         self.duration = duration
         self.image = (image == nil) ? "" : image!
         self.totalPrice = (totalPrice == nil) ? 0.0000 : totalPrice!
+        self.createdAt = Utils.convertDate(from: createdAt)
         self.status = (status == nil) ? "" : status!
     }
     
@@ -65,6 +69,7 @@ public class Promotion {
                   duration: jsonObject["duration"].intValue,
                   image: jsonObject["image"].stringValue,
                   totalPrice: jsonObject["totalPrice"].floatValue,
+                  createdAt: jsonObject["createdAt"].stringValue,
                   status: jsonObject["status"].stringValue)
     }
     
