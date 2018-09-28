@@ -12,6 +12,7 @@ import SwiftyJSON
 public class Promotion {
     public var id: Int
     public var promotionType: PromotionType
+    public var privateId: String
     public var name: String
     public var description: String
     public var initialDate: Date
@@ -24,6 +25,7 @@ public class Promotion {
     public init() {
         self.id = 0
         self.promotionType = PromotionType.init()
+        self.privateId = ""
         self.name = ""
         self.description = ""
         self.initialDate = Utils.getTimeNow()
@@ -34,9 +36,10 @@ public class Promotion {
         self.status = ""
     }
     
-    public init(id: Int, promotionType: PromotionType, name: String, description: String, initialDate: Date, duration: Int, image: String?, totalPrice: Float?, createdAt: Date, status: String?) {
+    public init(id: Int, promotionType: PromotionType, privateId: String, name: String, description: String, initialDate: Date, duration: Int, image: String?, totalPrice: Float?, createdAt: Date, status: String?) {
         self.id = id
         self.promotionType = promotionType
+        self.privateId = privateId
         self.name = name
         self.description = description
         self.initialDate = initialDate
@@ -47,9 +50,10 @@ public class Promotion {
         self.status = (status == nil) ? "" : status!
     }
     
-    public init(id: Int, promotionType: PromotionType, name: String, description: String, initialDate: String, duration: Int, image: String?, totalPrice: Float?, createdAt: String, status: String?) {
+    public init(id: Int, promotionType: PromotionType, privateId: String, name: String, description: String, initialDate: String, duration: Int, image: String?, totalPrice: Float?, createdAt: String, status: String?) {
         self.id = id
         self.promotionType = promotionType
+        self.privateId = privateId
         self.name = name
         self.description = description
         self.initialDate = Utils.convertDate(from: initialDate)
@@ -63,6 +67,7 @@ public class Promotion {
     public convenience init(fromJSONObject jsonObject: JSON) {
         self.init(id: jsonObject["id"].intValue,
                   promotionType: PromotionType.init(fromJSONObject: jsonObject["promotionType"]),
+                  privateId: jsonObject["privateId"].stringValue,
                   name: jsonObject["name"].stringValue,
                   description: jsonObject["description"].stringValue,
                   initialDate: jsonObject["initialDate"].stringValue,
