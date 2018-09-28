@@ -14,6 +14,7 @@ public class Place {
     public var placeType: PlaceType
     public var company: Company
     public var beacon: Beacon
+    public var promotion: Promotion
     public var name: String
     public var description: String
     public var priority: Int
@@ -27,6 +28,7 @@ public class Place {
         self.placeType = PlaceType.init()
         self.company = Company.init()
         self.beacon = Beacon.init()
+        self.promotion = Promotion.init()
         self.name = ""
         self.description = ""
         self.priority = 0
@@ -36,11 +38,12 @@ public class Place {
         self.status = ""
     }
     
-    public init(id: Int, placeType: PlaceType, company: Company, beacon: Beacon, name: String, description: String?, priority: Int, latitude: Float, longitude: Float, altitude: Float, status: String?) {
+    public init(id: Int, placeType: PlaceType, company: Company, beacon: Beacon, promotion: Promotion, name: String, description: String?, priority: Int, latitude: Float, longitude: Float, altitude: Float, status: String?) {
         self.id = id
         self.placeType = placeType
         self.company = company
         self.beacon = beacon
+        self.promotion = promotion
         self.name = name
         self.description = (description == nil) ? "" : description!
         self.priority = priority
@@ -55,6 +58,7 @@ public class Place {
                   placeType: PlaceType.init(fromJSONObject: jsonObject["placeType"]),
                   company: Company.init(fromJSONObject: jsonObject["company"]),
                   beacon: Beacon.init(fromJSONObject: jsonObject["beacon"]),
+                  promotion: Promotion.init(fromJSONObject: jsonObject["promotion"]),
                   name: jsonObject["name"].stringValue,
                   description: jsonObject["description"].stringValue,
                   priority: jsonObject["priority"].intValue,
