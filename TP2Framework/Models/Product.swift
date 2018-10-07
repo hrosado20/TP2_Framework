@@ -15,6 +15,7 @@ public class Product {
     public var description: String
     public var price: Float
     public var image: String
+    public var attributes: JSON
     public var status: String
     
     public init() {
@@ -23,15 +24,17 @@ public class Product {
         self.description = ""
         self.price = 0.0000
         self.image = ""
+        self.attributes = JSON()
         self.status = ""
     }
     
-    public init(id: Int, name: String, description: String, price: Float, image: String?, status: String?) {
+    public init(id: Int, name: String, description: String, price: Float, image: String?, attributes: JSON?, status: String?) {
         self.id = id
         self.name = name
         self.description = description
         self.price = price
         self.image = (image == nil) ? "" : image!
+        self.attributes = (attributes == nil) ? JSON() : attributes!
         self.status = (status == nil) ? "" : status!
     }
     
@@ -41,6 +44,7 @@ public class Product {
                   description: jsonObject["description"].stringValue,
                   price: jsonObject["price"].floatValue,
                   image: jsonObject["image"].stringValue,
+                  attributes: jsonObject["attributes"],
                   status: jsonObject["status"].stringValue)
     }
     

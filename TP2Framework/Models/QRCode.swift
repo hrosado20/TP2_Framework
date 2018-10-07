@@ -17,7 +17,7 @@ public class QRCode {
     public var inputCorrectionlevel: String
     public var url: String
     public var ip: String
-    public var createdAt: Date
+    public var expiredAt: Date
     public var status: String
     
     public init() {
@@ -28,11 +28,11 @@ public class QRCode {
         self.inputCorrectionlevel = ""
         self.url = ""
         self.ip = ""
-        self.createdAt = Utils.getTimeNow()
+        self.expiredAt = Utils.getTimeNow()
         self.status = ""
     }
     
-    public init(id: Int, user: User, promotion: Promotion, inputMessage: String?, inputCorrectionlevel: String?, url: String?, ip: String?, createdAt: Date, status: String?) {
+    public init(id: Int, user: User, promotion: Promotion, inputMessage: String?, inputCorrectionlevel: String?, url: String?, ip: String?, expiredAt: Date, status: String?) {
         self.id = id
         self.user = user
         self.promotion = promotion
@@ -40,11 +40,11 @@ public class QRCode {
         self.inputCorrectionlevel = (inputCorrectionlevel == nil) ? "" : inputCorrectionlevel!
         self.url = (url == nil) ? "" : url!
         self.ip = (ip == nil) ? "" : ip!
-        self.createdAt = createdAt
+        self.expiredAt = expiredAt
         self.status = (status == nil) ? "" : status!
     }
     
-    public init(id: Int, user: User, promotion: Promotion, inputMessage: String?, inputCorrectionlevel: String?, url: String?, ip: String?, createdAt: String, status: String?) {
+    public init(id: Int, user: User, promotion: Promotion, inputMessage: String?, inputCorrectionlevel: String?, url: String?, ip: String?, expiredAt: String, status: String?) {
         self.id = id
         self.user = user
         self.promotion = promotion
@@ -52,7 +52,7 @@ public class QRCode {
         self.inputCorrectionlevel = (inputCorrectionlevel == nil) ? "" : inputCorrectionlevel!
         self.url = (url == nil) ? "" : url!
         self.ip = (ip == nil) ? "" : ip!
-        self.createdAt = Utils.convertDate(from: createdAt)
+        self.expiredAt = Utils.convertDate(from: expiredAt)
         self.status = (status == nil) ? "" : status!
     }
     
@@ -64,7 +64,7 @@ public class QRCode {
                   inputCorrectionlevel: jsonObject["inputCorrectionLevel"].stringValue,
                   url: jsonObject["url"].stringValue,
                   ip: jsonObject["ip"].stringValue,
-                  createdAt: jsonObject["createdAt"].stringValue,
+                  expiredAt: jsonObject["expiredAt"].stringValue,
                   status: jsonObject["status"].stringValue)
     }
     

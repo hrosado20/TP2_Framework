@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-public class PromotionPlace {
+public class PromotionLocation {
     public var id: Int
     public var place: Place
     public var promotion: Promotion
@@ -36,10 +36,10 @@ public class PromotionPlace {
                   status: jsonObject["status"].stringValue)
     }
     
-    public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [PromotionPlace] {
-        var modelList = [PromotionPlace]()
+    public static func buildCollection(fromJSONArray jsonArray: [JSON]) -> [PromotionLocation] {
+        var modelList = [PromotionLocation]()
         for i in 0..<jsonArray.count {
-            modelList.append(PromotionPlace.init(fromJSONObject: jsonArray[i]))
+            modelList.append(PromotionLocation.init(fromJSONObject: jsonArray[i]))
         }
         return modelList
     }

@@ -10,7 +10,7 @@
 		030DF5F395C69FF8BAEF0548 /* Pods_TP2Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA46E7B232B8CEC998DA721C /* Pods_TP2Framework.framework */; };
 		1E57FB2D7CA4C1BE028527E7 /* Pods_TP2FrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775B81C576DA14AB9C426972 /* Pods_TP2FrameworkTests.framework */; };
 		409B44C02156ADE400CDF9B0 /* CloudinaryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409B44BF2156ADE400CDF9B0 /* CloudinaryHelper.swift */; };
-		40A944D4215E34D50018AB1A /* PromotionPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A944D3215E34D50018AB1A /* PromotionPlace.swift */; };
+		40A944D4215E34D50018AB1A /* PromotionLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A944D3215E34D50018AB1A /* PromotionLocation.swift */; };
 		40AEB8F62142D70B0042DD3F /* TP2Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AEB8EC2142D70B0042DD3F /* TP2Framework.framework */; };
 		40AEB8FB2142D70B0042DD3F /* TP2FrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AEB8FA2142D70B0042DD3F /* TP2FrameworkTests.swift */; };
 		40AEB8FD2142D70B0042DD3F /* TP2Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 40AEB8EF2142D70B0042DD3F /* TP2Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,7 +43,7 @@
 
 /* Begin PBXFileReference section */
 		409B44BF2156ADE400CDF9B0 /* CloudinaryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudinaryHelper.swift; sourceTree = "<group>"; };
-		40A944D3215E34D50018AB1A /* PromotionPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionPlace.swift; sourceTree = "<group>"; };
+		40A944D3215E34D50018AB1A /* PromotionLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionLocation.swift; sourceTree = "<group>"; };
 		40AEB8EC2142D70B0042DD3F /* TP2Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TP2Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AEB8EF2142D70B0042DD3F /* TP2Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TP2Framework.h; sourceTree = "<group>"; };
 		40AEB8F02142D70B0042DD3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,10 +155,10 @@
 				40AEB92321430FA90042DD3F /* Product.swift */,
 				40AEB9132142E16A0042DD3F /* Promotion.swift */,
 				40AEB925214310C20042DD3F /* PromomtionDetail.swift */,
+				40A944D3215E34D50018AB1A /* PromotionLocation.swift */,
 				40AEB9112142E0F60042DD3F /* PromotionType.swift */,
 				40AEB90F2142E09C0042DD3F /* QRCode.swift */,
 				40AEB90D2142DB0F0042DD3F /* User.swift */,
-				40A944D3215E34D50018AB1A /* PromotionPlace.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -378,7 +378,7 @@
 				40AEB90A2142D7EF0042DD3F /* Constants.swift in Sources */,
 				40AEB926214310C20042DD3F /* PromomtionDetail.swift in Sources */,
 				409B44C02156ADE400CDF9B0 /* CloudinaryHelper.swift in Sources */,
-				40A944D4215E34D50018AB1A /* PromotionPlace.swift in Sources */,
+				40A944D4215E34D50018AB1A /* PromotionLocation.swift in Sources */,
 				40AEB90E2142DB0F0042DD3F /* User.swift in Sources */,
 				40AEB91E21430AC00042DD3F /* PlaceType.swift in Sources */,
 				40AEB9142142E16A0042DD3F /* Promotion.swift in Sources */,
