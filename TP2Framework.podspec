@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "TP2Framework"
-  s.version      = "1.6"
+  s.version      = "1.7"
   s.summary      = "Framework for TP2App API responses."
 
   # This description is used to generate tags and improve search results.
