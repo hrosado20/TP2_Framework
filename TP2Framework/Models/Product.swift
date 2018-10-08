@@ -11,6 +11,7 @@ import SwiftyJSON
 
 public class Product {
     public var id: Int
+    public var company: Company
     public var name: String
     public var description: String
     public var price: Float
@@ -20,6 +21,7 @@ public class Product {
     
     public init() {
         self.id = 0
+        self.company = Company.init()
         self.name = ""
         self.description = ""
         self.price = 0.0000
@@ -28,8 +30,9 @@ public class Product {
         self.status = ""
     }
     
-    public init(id: Int, name: String, description: String, price: Float, image: String?, attributes: JSON?, status: String?) {
+    public init(id: Int, company: Company, name: String, description: String, price: Float, image: String?, attributes: JSON?, status: String?) {
         self.id = id
+        self.company = company
         self.name = name
         self.description = description
         self.price = price
@@ -40,6 +43,7 @@ public class Product {
     
     public convenience init(fromJSONObject jsonObject: JSON) {
         self.init(id: jsonObject["id"].intValue,
+                  company: Company.init(fromJSONObject: jsonObject["company"]),
                   name: jsonObject["name"].stringValue,
                   description: jsonObject["description"].stringValue,
                   price: jsonObject["price"].floatValue,
