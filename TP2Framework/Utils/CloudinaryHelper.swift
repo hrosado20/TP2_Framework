@@ -25,7 +25,7 @@ public class CloudinaryHelper {
         let cloudinary:CLDCloudinary = CLDCloudinary(configuration: config)
         
         let params: CLDUploadRequestParams = CLDUploadRequestParams().setUploadPreset(Constants.cloudinary.userPreset)
-        cloudinary.createUploader().signedUpload(data: UIImagePNGRepresentation(image)!, params: params, progress: progress) { (response, error) in
+        cloudinary.createUploader().signedUpload(data: image.pngData()!, params: params, progress: progress) { (response, error) in
             if error == nil {
                 success(response!.url)
             }
@@ -37,7 +37,7 @@ public class CloudinaryHelper {
         let cloudinary:CLDCloudinary = CLDCloudinary(configuration: config)
         
         let params: CLDUploadRequestParams = CLDUploadRequestParams().setUploadPreset(Constants.cloudinary.promotionPreset)
-        cloudinary.createUploader().signedUpload(data: UIImagePNGRepresentation(image)!, params: params, progress: progress) { (response, error) in
+        cloudinary.createUploader().signedUpload(data: image.pngData()!, params: params, progress: progress) { (response, error) in
             if error == nil {
                 success(response!.url)
             }
@@ -49,7 +49,7 @@ public class CloudinaryHelper {
         let cloudinary:CLDCloudinary = CLDCloudinary(configuration: config)
         
         let params: CLDUploadRequestParams = CLDUploadRequestParams().setUploadPreset(Constants.cloudinary.productPreset)
-        cloudinary.createUploader().signedUpload(data: UIImagePNGRepresentation(image)!, params: params, progress: progress) { (response, error) in
+        cloudinary.createUploader().signedUpload(data: image.pngData()!, params: params, progress: progress) { (response, error) in
             if error == nil {
                 success(response!.url)
             }
